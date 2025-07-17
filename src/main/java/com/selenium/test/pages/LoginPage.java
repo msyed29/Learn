@@ -30,19 +30,19 @@ public class LoginPage extends BasePage {
         driver.get("https://opensource-demo.orangehrmlive.com/");
     }
     
-    public void enterUsername(String username) {
+    private void enterUsername(String username) {
         waitForElementToBeVisible(usernameInput);
         usernameInput.clear();
         usernameInput.sendKeys(username);
     }
     
-    public void enterPassword(String password) {
+    private void enterPassword(String password) {
         waitForElementToBeVisible(passwordInput);
         passwordInput.clear();
         passwordInput.sendKeys(password);
     }
     
-    public void clickLoginButton() {
+    private void clickLoginButton() {
         waitForElementToBeClickable(loginButton);
         loginButton.click();
     }
